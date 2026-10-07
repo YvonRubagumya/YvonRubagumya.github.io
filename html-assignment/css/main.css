@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: lightblue;
+}
+
+.site-titale {
+    color: blue;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.hobbies {
+    list-style-type: square;
+
+}
+
+.hobbies li:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+a  {
+    text-decoration: none;
+    background-color: lightblue;
+    border: 1px soild black;
+}
+
+a:hover,
+a:focus {
+    background-color: darkblue;
+    color: white;
+}
+
