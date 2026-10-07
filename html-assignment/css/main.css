@@ -4,10 +4,10 @@ body {
 }
 
 header, footer {
-    background-color: lightblue;
+    background-color: rgb(15, 163, 212);
 }
 
-.site-titale {
+.site-title {
     color: blue;
 }
 
@@ -17,17 +17,20 @@ header, footer {
 
 .hobbies {
     list-style-type: square;
-
 }
 
 .hobbies li:nth-child(odd) {
-    background-color: lightgrey;
+    background-color: rgb(76, 75, 75);
 }
 
-a  {
+nav ul {
+    list-style-type: none;
+}
+
+a {
     text-decoration: none;
     background-color: lightblue;
-    border: 1px soild black;
+    border: 1px solid black;
 }
 
 a:hover,
@@ -35,4 +38,3 @@ a:focus {
     background-color: darkblue;
     color: white;
 }
-
