@@ -20,7 +20,7 @@ header, footer {
 }
 
 .hobbies li:nth-child(odd) {
-    background-color: rgb(76, 75, 75);
+    background-color: rgb(81, 76, 76);
 }
 
 nav ul {
