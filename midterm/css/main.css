@@ -6,6 +6,22 @@
 /* setting page style */
 body{
     margin: o;
-    background-color: ;
-    color:
+    background-color: pastel #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    font-size: 14px;
+}
+
+/* centre the web  page   */
+.wrapper{
+    max-width: 837px;
+    mergin: 0 auto;
+    background-color: d4e9e7;
+}
+
+/* pasitionig the title  */
+.site-header {
+    position: relative;
+    height: 280px;
+    overflow: ;
 }
