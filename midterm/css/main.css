@@ -194,7 +194,7 @@ footer p {
 }
 
 /* adopt the layerout to smaller screens */
-@media (max-with: 600px) {
+@media (max-with: 600px)
     .site-header {
         height: 200px;
 }
@@ -208,6 +208,17 @@ footer p {
 }
 
 .article-image {
-    
+    width: 40%
+    height: auto;
+    aspect-ratio: 1/1;
 }
+
+.contact form{
+    padding: 18px 10px 10px;
+}
+
+legend {
+    font-size: 17px;
+}
+
 
