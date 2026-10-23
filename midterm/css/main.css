@@ -57,6 +57,32 @@ body{
 .site-nav a {
     flex: 1;
     text-align: center;
-    padding: 10px  0;
+    padding: 0 10px;
+    color: #111;
+    text-decoration: none;
+    text-transform: 21px;
+    line-height:28px ;
 }
+
+/* adding vertcal divion */
+main{
+    padding: 0 8px;
+}
+
+h2{
+    margin: 18px 012px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/* adding the floting artical */
+.article-image {
+    float: left;
+    width: 205px;
+    height: 211px;
+    object-fit: cover;
+    margin: 0 16px 10px 0;
+}
+
+
 
