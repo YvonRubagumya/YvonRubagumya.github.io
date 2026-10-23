@@ -10,3 +10,21 @@ body{
     background-color: #aad4cf;
 }
 
+.wrapper{
+    width: 750px;
+    background-color: #aad4cf;
+    /* center block level element */
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav li{
+    
+}
+
+
+
