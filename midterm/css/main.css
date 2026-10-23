@@ -164,4 +164,14 @@ legend{
     gap: 4px;
 }
 
+.radio-options label{
+    cursor: pointer;
+}
+
+.radio-options input{
+    margin: 0 2px o o;
+}
+
+/* styling the submit botton */
+
 
