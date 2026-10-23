@@ -23,8 +23,23 @@ nav ul{
 }
 
 nav li{
-    
+    display: inline-block;
+    width: 247px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-right: 1px soild black;
 }
+
+nav li: : :last-child{
+    boarder-right: none;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 
 
 
