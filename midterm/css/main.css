@@ -47,3 +47,16 @@ body{
     white-space: nowrap;
 }
 
+/* adding the three column navigation bar */
+.site-nav {
+    display: flex;
+    background-color: #d4e9e7;
+    padding: 10px;
+}
+
+.site-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 10px  0;
+}
+
