@@ -107,4 +107,47 @@ article p {
     line-height: 1.05;
 }
 
+/* styling the contact section */
+.contact h2{
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.contact form{
+    border: 1px solid #333;
+    padding: 26px 13px 13px;
+}
+
+/* label above fields? */
+.form-field{
+    margin-bottom: 15px;
+}
+
+.form-field label{
+    display: black;
+    margin: bottom 5px; ;
+    font-size: 16px;
+}
+
+.form-field input,
+.form-field textarea{
+    display: black;
+    width: 100%;
+    padding: 5px;
+    border:  1px solid #ccc;
+    background-color: white;
+    font: inherit;
+}
+
+/* giving the box space */
+.form-field textarea {
+    resize: vertical;
+    min-height: 82px;
+}
+
+/* removeing the default fieldset border */
+fieldset{
+    margin: 0 0 12px;
+    
+}
 
