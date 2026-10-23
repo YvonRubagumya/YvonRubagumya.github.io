@@ -148,6 +148,20 @@ article p {
 /* removeing the default fieldset border */
 fieldset{
     margin: 0 0 12px;
-    
+    padding: 0;
+    border: 0;
 }
+
+legend{
+   margin-bottom: 18px; 
+   padding: 0;
+   font-size: 20px;
+}
+
+.radio-options{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
 
