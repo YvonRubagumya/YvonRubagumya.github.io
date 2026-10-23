@@ -84,5 +84,27 @@ h2{
     margin: 0 16px 10px 0;
 }
 
+/* compacting */
+article p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* floating image  */
+.facts{
+    clear: both;
+    padding-top: 1px;
+}
+
+.facts h2 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.facts ul{
+    margin: 0;
+    padding-left: 13px;
+    line-height: 1.05;
+}
 
 
