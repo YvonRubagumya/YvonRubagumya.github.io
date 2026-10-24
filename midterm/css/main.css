@@ -40,6 +40,15 @@ nav li: : :last-child{
     clear: both;
 }
 
+article img{
+    float: left;
+    
+}
+
+.fact{
+    
+}
+
 
 
 
