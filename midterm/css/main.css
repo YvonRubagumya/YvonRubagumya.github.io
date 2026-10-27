@@ -1,54 +1,166 @@
-*{
-    box-sizing: boad-box;
-}
-html{
-    font: 16px;
+/* Midterm Assignment - Lone Starfish */
+/* Author: Student Name - Valid, formatted, with comments */
+
+/* Reset and base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
+    /* Outer background like mockup */
+    background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #aad4cf;
+    line-height: 1.4;
 }
 
-.wrapper{
-    width: 750px;
-    background-color: #aad4cf;
-    /* center block level element */
+/* Main container - centers page */
+.wrapper {
+    width: 1024px;
     margin: 0 auto;
+    background-color: #d4e9e7; /* Inner light background */
 }
 
-nav ul{
-    list-style-type: none;
-    padding-left: 0;
+/* HEADER - Requirement: Position property used to add text on top of image */
+.site-header {
+    position: relative; /* Parent for absolute title */
+    width: 100%;
+    height: 300px;
 }
 
-nav li{
-    display: inline-block;
-    width: 247px;
-    text-align: center;
-    font-size: 1.5rem;
-    border-right: 1px soild black;
-}
-
-nav li: : :last-child{
-    boarder-right: none;
-}
-
-.clearfix::after{
-    content: '';
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    clear: both;
 }
 
-article img{
-    float: left;
-    
+.site-title {
+    position: absolute; /* Positions title on top of image - requirement */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: normal;
 }
 
-.fact{
-    
+/* NAVIGATION - 3 links with separators */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
+.main-nav li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid black;
+}
 
+.main-nav li:last-child {
+    border-right: none;
+}
 
+.main-nav a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+/* CONTENT */
+.content {
+    padding: 15px;
+}
+
+/* ARTICLE - Requirement: Image should have text wrapping around it */
+.article-content {
+    overflow: auto; /* Clears float */
+    margin-top: 10px;
+}
+
+.article-image {
+    width: 250px;
+    float: left; /* Makes text wrap - requirement */
+    margin: 0 20px 10px 0;
+}
+
+/* FACTS SECTION */
+.facts {
+    margin-top: 25px;
+}
+
+.facts ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    margin-top: 25px;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+/* Requirement: Form border like mockup */
+.contact-form form {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.contact-form fieldset {
+    border: none; /* Fieldset contains all - requirement */
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.radio-question {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    display: inline;
+    margin-top: 0;
+}
+
+.send-btn {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+    padding: 20px;
+    font-size: 14px;
+}

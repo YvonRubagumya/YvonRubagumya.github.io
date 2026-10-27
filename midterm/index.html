@@ -4,49 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yvon Rubagumya</title>
+    <!-- Requirement: CSS in proper folder -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- set with center of elment  -->
-     <div class="wrapper">
-        <header>
-            <h1>lone starfish</h1>
-            <img src="images/lone-starfish-wide.jpg">
-
+    <!-- Main wrapper to center content like mockup -->
+    <div class="wrapper">
+        
+        <!-- HEADER SECTION -->
+        <!-- Requirement: Use image tag to add image and position site title on top -->
+        <header class="site-header">
+            <!-- Header image using img tag -->
+            <img src="images/lone-starfish-wide.jpg" alt="Lone Starfish wide" class="header-image">
+            <!-- Site title positioned over image using CSS position -->
+            <h1 class="site-title">Lone Starfish</h1>
         </header>
-        <nav>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">story</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#story">STORY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <article class="clearfix">
-            <img src="images/lone-starfish.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a quas rerum architecto excepturi. Dignissimos eligendi ab obcaecati consectetur adipisci, quis ad dolorum cupiditate quibusdam nihil, illo suscipit molestias voluptatum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium ratione consequuntur a voluptatum, iusto quae cupiditate. Eligendi natus nam eos necessitatibus, fugit, consequuntur deserunt accusantium, animi ipsa voluptate quia!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est ullam alias modi incidunt? Tempore eaque, nam voluptates ex ea id, veritatis, eius temporibus rerum obcaecati cupiditate animi illo repellat.</p>
 
-        </article>
-        <ul class="fact">
-            <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-            <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+        <!-- MAIN CONTENT -->
+        <main class="content">
+            <!-- ARTICLE SECTION -->
+            <!-- Requirement: Image should have text wrapping around it -->
+            <article id="story">
+                <h2>Life of a Starfish</h2>
+                <div class="article-content">
+                    <!-- Small image floated left so text wraps -->
+                    <img src="images/lone-starfish.jpg" alt="Lone Starfish" class="article-image">
+                    <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooney smooth-tongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thomfish; plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobrandh snipefish; rock bass sea devil trunidish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
+                </div>
+            </article>
 
-        </ul>
-        <form action="method">
+            <!-- FACTS SECTION -->
+            <!-- Requirement: Use proper syntax for listing facts -->
+            <section class="facts">
+                <h3>Facts About Starfish</h3>
+                <ul>
+                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                </ul>
+            </section>
 
-        </form>
+            <!-- CONTACT FORM -->
+            <!-- Requirement: All details must be in fieldset -->
+            <section id="contact" class="contact-form">
+                <h3>Contact to learn more</h3>
+                <form>
+                    <fieldset>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+
+                        <p class="radio-question">Would you like to visit the starfish?</p>
+                        <div class="radio-group">
+                            <label for="yes">Yes <input type="radio" id="yes" name="visit" value="yes"></label>
+                            <label for="no">No <input type="radio" id="no" name="visit" value="no"></label>
+                            <label for="maybe">Maybe <input type="radio" id="maybe" name="visit" value="maybe"></label>
+                        </div>
+
+                        <button type="submit" class="send-btn">SEND</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
         <footer>
-            <p>copyright 2026 lane sarfish</p>
-
+            <p>&copy; Lone Starfish.</p>
         </footer>
-        </nav>
-     </div>
-</body>    
-</head>
-<body>
-    
+    </div>
 </body>
 </html>
